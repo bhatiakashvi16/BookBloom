@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOK TRACKER</title>
+    <link rel="stylesheet" href="final.css">
+    </head>
+<body>
+  <div class = "search-box">
+    🔍
+  <input type="text" id="searchInput" placeholder="Search books..."> </div>
+  <div class = "hero">
+  <h1>🌺BookBloom🌺</h1> 
+<p class = "tagline">♡A cozy digital Bookshelf ♡</p>
+<p class = "subtitle">Collect Books. Cherish Stories. Bloom your mind!</p>
+</div>
+
+  <div class="book-form" >
+    <select id="category">
+      <option value="">Select Category📚</option>
+      <option value="Fiction">Fiction</option>
+      <option value="Non-Fiction">Non-Fiction</option>
+      <option value="Mystery">Mystery</option>
+      <option value="Romance">Romance</option>
+      <option value="Thriller">Science Fiction</option>
+      <option value="Fantasy">Fantasy</option>
+     </select>
+     <div class="form-grid">
+     <input type = "text" id="title" placeholder="Book Title">
+     <input type="text" id="author" placeholder="Author Name">
+      <input type="text" id="genre" placeholder="Genre">
+      <input type="file" id="image">
+      <select id="rating">
+        <form class = "book-form"></form> 
+        <option> Select Rating</option>
+      <option> ⭐️</option>
+      <option> ⭐️⭐️</option>
+      <option> ⭐️⭐️⭐️</option>
+      <option> ⭐️⭐️⭐️⭐️</option>
+      <option> ⭐️⭐️⭐️⭐️⭐️</option>
+      </select> 
+<select id="status">
+    <option>To Read</option>
+    <option>Reading</option>
+    <option>Completed</option>
+</select>
+      <textarea id="review" placeholder="Write your review"></textarea> </div>
+      <button id="addBook">Add to Library</button>
+      </div>
+      <div class="dashboard">
+    <div class="dashboard-card">
+        <h3>📚</h3>
+        <h2 id="totalBooks">0</h2>
+        <p>Total Books</p>
+    </div>
+    <div class="dashboard-card">
+        <h3>❤️</h3>
+        <h2 id="totalFav">0</h2>
+        <p>Favorites</p>
+    </div>
+    <div class="dashboard-card">
+        <h3>⭐</h3>
+        <h2 id="avgRating">0</h2>
+        <p>Average Rating</p>
+    </div>
+</div>
+<div class="library-container">
+      <h2>MY LIBRARY📚</h2>
+      <p>Track every story you have loved 💛, are reading 📖 or can't wait to begin 🌼</p>
+      <div id="library" class="books-container"></div> </div>
+    <script src="final.js"></script>
+    <footer>
+      <p>Made with love by <b>Kashvi Bhatia✌🏻</b></p>
+      <br><br>
+      <p> BookBloom🌸</p>
+    </footer>
+</body>
+</html>
