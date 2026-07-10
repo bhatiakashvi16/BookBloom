@@ -5,18 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BOOK TRACKER</title>
     <link rel="stylesheet" href="final.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     </head>
 <body>
-  <div class = "search-box">
-    🔍
-  <input type="text" id="searchInput" placeholder="Search books..."> </div>
+  <div class="top-controls">
+
+    <button id="themeToggle">🌙 Dark Mode</button>
+
+    <select id="sortBooks">
+        <option value="">Sort Books</option>
+        <option value="title">Title (A-Z)</option>
+        <option value="rating">Highest Rating</option>
+        <option value="author">Author (A-Z)</option>
+    </select>
+
+  </div>
+  <div class="search-box">
+     <i class="fa-solid fa-magnifying-glass search-icon"></i>
+    <input type="text" id="searchInput" placeholder="Search books...">
+  </div>
   <div class = "hero">
   <h1>🌺BookBloom🌺</h1> 
-<p class = "tagline">♡A cozy digital Bookshelf ♡</p>
-<p class = "subtitle">Collect Books. Cherish Stories. Bloom your mind!</p>
-</div>
+  <p class = "tagline">♡A cozy digital Bookshelf ♡</p>
+  <p class = "subtitle">Collect Books. Cherish Stories. Bloom your mind!</p>
+  </div>
 
-  <div class="book-form" >
+  <form class="book-form" id="bookForm" >
     <select id="category">
       <option value="">Select Category📚</option>
       <option value="Fiction">Fiction</option>
@@ -27,28 +41,39 @@
       <option value="Fantasy">Fantasy</option>
      </select>
      <div class="form-grid">
-     <input type = "text" id="title" placeholder="Book Title">
-     <input type="text" id="author" placeholder="Author Name">
+      <input type = "text" id="title" placeholder="Book Title">
+      <input type="text" id="author" placeholder="Author Name">
       <input type="text" id="genre" placeholder="Genre">
       <input type="file" id="image">
-      <select id="rating">
-        <form class = "book-form"></form> 
-        <option> Select Rating</option>
-      <option> ⭐️</option>
-      <option> ⭐️⭐️</option>
-      <option> ⭐️⭐️⭐️</option>
-      <option> ⭐️⭐️⭐️⭐️</option>
-      <option> ⭐️⭐️⭐️⭐️⭐️</option>
+      <select id="status">
+        <option value="Reading">Currently Reading</option>
+        <option value="Completed">Completed</option>
+        <option value="Want">Want to Read</option>
+      </select>
+      <select id="rating"> 
+        <option value="">Select Rating</option>
+        <option value="1">⭐️</option>
+        <option value="2">⭐️⭐️</option>
+        <option value="3">⭐️⭐️⭐️</option>
+        <option value="4">⭐️⭐️⭐️⭐️</option>
+        <option value="5">⭐️⭐️⭐️⭐️⭐️</option>
       </select> 
-<select id="status">
-    <option>To Read</option>
-    <option>Reading</option>
-    <option>Completed</option>
-</select>
       <textarea id="review" placeholder="Write your review"></textarea> </div>
-      <button id="addBook">Add to Library</button>
+      <button type="submit" id="addBook">Add to Library</button>
+  </form>
+  <div class="dashboard">
+    <div class="dashboard-card">
+      <h3>📖</h3>
+      <h2 id="completedBooks">0</h2>
+      <p>Books Completed</p>
+    </div>
+    <div class="progress-container">
+      <h2>Reading Goal</h2>
+      <p><span id="progressText">0</span>/20 Books Completed</p>
+        <div class="progress-bar">
+        <div id="progressFill"></div>
+        </div>
       </div>
-      <div class="dashboard">
     <div class="dashboard-card">
         <h3>📚</h3>
         <h2 id="totalBooks">0</h2>
