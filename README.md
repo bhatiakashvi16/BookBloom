@@ -3,14 +3,14 @@ BookBloom is a Personalized-Manually Operated Digital Library built using HTML, 
 It is your own cozy Digital Bookshelf to collect books, cherish stories, & track your reading journey. It allows users to organize, review, and manage their books in an elegant and interactive interface.  
 
 ## About  
-BookBloom is a simple, front-end book tracker that lets you log the books you're reading, have read, or want to read — complete with cover images, ratings, reviews, and favorites — all stored right in your browser.  
+BookBloom is a simple, front-end book tracker that lets you log the books you're reading, have read, or want to read, complete with cover images, ratings, reviews, and favorites, all stored right in your browser.  
 
 ## Features
 - 📚 Add, edit, and delete books with title, author, genre, cover image, status, rating, and review
 - ✏️ Edit book details
 - 🗑️ Delete books
 - 🗂️ Category filter by genre
-- ❤️ Favorites — mark books as favorites, highlighted with a gold border
+- ❤️ Favorites — mark books as favorites
 - ⭐ Star ratings from 1–5
 - 📝 Add personal reviews
 - 📖 Track reading status (To Read, Reading, Completed)
@@ -41,6 +41,6 @@ BookBloom/
 - Use the search bar, category dropdown, or sort dropdown to organize your library.
 - Toggle ** Dark Mode** in the top-right corner anytime.
   
-## Credits
-Made with love by **Kashvi Bhatia**
+## Author
+**Kashvi Bhatia**
 
